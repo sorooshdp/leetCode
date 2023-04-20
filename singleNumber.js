@@ -3,7 +3,7 @@
  * @return {number}
  */
 var singleNumber = function (nums) {
-  if (nums.length == 1) {
+  if (nums.length === 1) {
     return nums[0];
   }
   const toFindDuplicates = (arry) =>
