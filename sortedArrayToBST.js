@@ -6,7 +6,7 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
-class Node {
+class TreeNode {
     constructor(val, right, left) {
         this.val = val;
         this.left = left;
@@ -19,34 +19,35 @@ class Node {
  * @return {TreeNode}
  */
 const sortedArrayToBST = function (nums) {
-    const n = nums.length;
-    root = toBST(nums, 0, n - 1);
-    preOrder(root, []);
+    const answer = [];
+    const length = nums.length;
+    const node = toBst(nums, 0, length - 1);
+    return preOrder(answer, node);
 };
 
-/* A utility function to print preorder traversal of BST */
-function preOrder(node,arr = []) {
-    if (node == null) {
-        return;
-    }
-    arr.push(node.val);
-    preOrder(node.left,arr);
-    preOrder(node.right,arr);
-
-    return arr
-}
-
-function toBST(arr, start, end) {
+const toBst = function (nums, start, end) {
     if (start > end) {
         return null;
     }
 
-    const mid = Math.floor((start + end) / 2);
-    const node = new Node(arr[mid]);
-    node.left = toBST(arr, start, mid - 1);
-    node.right = toBST(arr, mid + 1, end);
+    let mid = Math.floor((start + end) / 2);
+    const node = new TreeNode(nums[mid]);
+    node.left = toBst(nums, 0, mid - 1);
+    node.right = toBst(nums, mid + 1, end);
 
-    return node;
+    return node
 }
 
-console.log(sortedArrayToBST([1,2,3,4]))
+const preOrder = function (arr, node) {
+    if (node === null) {
+        return
+    }
+
+    arr.push(node.val)
+    preOrder(arr, node.left)
+    preOrder(arr, node.right)
+
+    return arr
+}
+
+console.log(sortedArrayToBST([1, 2, 3, 4]))
