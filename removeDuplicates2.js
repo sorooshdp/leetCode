@@ -9,10 +9,9 @@
 
 function removeDuplicates(nums) {
     let i = 0;
-    for (let n of nums) {
-        console.log(nums);
-        if (i < 2 || n > nums[i - 2]) {
-            nums[i] = n;
+    for (let num of nums) {
+        if (i < 2 || num > nums[i - 2]) {
+            nums[i] = num;
             i++;
         }
     }
