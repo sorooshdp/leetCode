@@ -1,4 +1,11 @@
 "use strict";
+// type JSONValue =
+//     | null
+//     | boolean
+//     | number
+//     | string
+//     | JSONValue[]
+//     | { [key: string]: JSONValue };
 const join = function (arr1, arr2) {
     const combained = arr1.concat(arr2);
     const merged = {};

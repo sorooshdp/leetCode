@@ -1,10 +1,10 @@
-type JSONValue =
-    | null
-    | boolean
-    | number
-    | string
-    | JSONValue[]
-    | { [key: string]: JSONValue };
+// type JSONValue =
+//     | null
+//     | boolean
+//     | number
+//     | string
+//     | JSONValue[]
+//     | { [key: string]: JSONValue };
 
 const join = function (arr1: any[], arr2: any[]): JSONValue[] {
     const combained = arr1.concat(arr2);

@@ -9,7 +9,7 @@ const flat = function (arr, n) {
             result.push(item);
         }
         else {
-            result.push(...flat(arr, n - 1));
+            result.push(...flat(item, n - 1));
         }
     });
     return result;
