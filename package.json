@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sorooshdp/leetCode/issues"
   },
-  "homepage": "https://github.com/sorooshdp/leetCode#readme"
+  "homepage": "https://github.com/sorooshdp/leetCode#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.2"
+  }
 }

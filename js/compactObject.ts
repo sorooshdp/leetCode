@@ -40,27 +40,27 @@ function compactObject(obj: Obj): Obj {
 
 //------------------- iterative depth-first search ------------------
 
-const compactObjectIterative = function( obj : Obj ) : Obj { 
-    const stack : [Obj, Obj][] = [[obj, Array.isArray(obj) ? [] : {}]];
-    let newObj : Obj = stack[0][1];
+// const compactObjectIterative = function( obj : Obj ) : Obj { 
+//     const stack : [Obj, Obj][] = [[obj, Array.isArray(obj) ? [] : {}]];
+//     let newObj : Obj = stack[0][1];
     
-    while ( stack.length > 0 ) {
-        const [currObj, newCurrObj] = stack.pop()!;
+//     while ( stack.length > 0 ) {
+//         const [currObj, newCurrObj] = stack.pop()!;
 
-        for ( const key in currObj ) {
-            const val = currObj[key];
+//         for ( const key in currObj ) {
+//             const val = currObj[key];
 
-            if ( !val ) continue
-            if ( typeof val !== 'object' ) {
-                Array.isArray(newCurrObj) ? newCurrObj.push(val) : newCurrObj[key] = val;
-                continue 
-            }
+//             if ( !val ) continue
+//             if ( typeof val !== 'object' ) {
+//                 Array.isArray(newCurrObj) ? newCurrObj.push(val) : newCurrObj[key] = val;
+//                 continue 
+//             }
 
-            const newSubObj : Obj = Array.isArray(val) ? [] : {}
-            Array.isArray(newCurrObj) ? newCurrObj.push(newSubObj) : newCurrObj[key] = newSubObj
-            stack.push([val, newSubObj])
-        }
-    }
+//             const newSubObj : Obj = Array.isArray(val) ? [] : {}
+//             Array.isArray(newCurrObj) ? newCurrObj.push(newSubObj) : newCurrObj[key] = newSubObj
+//             stack.push([val, newSubObj])
+//         }
+//     }
 
-    return newObj
-}
+//     return newObj
+// }
