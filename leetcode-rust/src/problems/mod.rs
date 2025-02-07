@@ -6,3 +6,6 @@ pub mod set_zeros;
 pub mod game_of_life;
 pub mod ransome_note;
 pub mod is_palindrom;
+pub mod is_subsequence;
+pub mod two_sum;
+pub mod max_area;
