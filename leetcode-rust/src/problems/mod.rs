@@ -9,3 +9,4 @@ pub mod is_palindrom;
 pub mod is_subsequence;
 pub mod two_sum;
 pub mod max_area;
+pub mod three_sum;
