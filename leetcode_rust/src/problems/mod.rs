@@ -12,3 +12,5 @@ pub mod max_area;
 pub mod three_sum;
 pub mod add_binary;
 pub mod str;
+pub mod reverse_bits;
+pub mod hamming_weight;
