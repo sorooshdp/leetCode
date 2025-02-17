@@ -17,3 +17,4 @@ pub mod hamming_weight;
 pub mod single_number;
 pub mod range_bitwise_and;
 pub mod single_number_two;
+pub mod score_of_string;

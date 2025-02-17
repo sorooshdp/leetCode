@@ -1,8 +1,5 @@
-use leetcode_rust::problems::add_binary::Solution;
+use leetcode_rust::problems::score_of_string::Solution;
 
 fn main() {
-    let a = "11".to_string();
-    let b = "1".to_string();
-    let result = Solution::add_binary(a, b);
-    println!("{}", result);
+    println!("{}", Solution::score_of_string("this is a string".to_string()));
 }
