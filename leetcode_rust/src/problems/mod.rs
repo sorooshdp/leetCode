@@ -20,3 +20,4 @@ pub mod single_number_two;
 pub mod score_of_string;
 pub mod marge;
 pub mod remove_element;
+pub mod is_isomorphic;
