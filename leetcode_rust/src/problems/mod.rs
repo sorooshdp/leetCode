@@ -21,3 +21,5 @@ pub mod score_of_string;
 pub mod marge;
 pub mod remove_element;
 pub mod is_isomorphic;
+pub mod search_insert;
+pub mod my_sqrt;
