@@ -23,3 +23,5 @@ pub mod remove_element;
 pub mod is_isomorphic;
 pub mod search_insert;
 pub mod my_sqrt;
+pub mod word_pattern;
+pub mod longest_consecutive;
