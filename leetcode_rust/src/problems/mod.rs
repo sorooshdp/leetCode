@@ -26,3 +26,4 @@ pub mod my_sqrt;
 pub mod word_pattern;
 pub mod longest_consecutive;
 pub mod max_points;
+pub mod my_pow;
