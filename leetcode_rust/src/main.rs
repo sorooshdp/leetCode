@@ -1,6 +1,6 @@
-use leetcode_rust::problems::max_points;
+use leetcode_rust::problems::longest_consecutive::{Solution};
 
 fn main() {
-    let v = vec![vec![1,1],vec![2,2],vec![3,3]];
-    max_points::Solution::max_points(v);
+    let nums = vec![100,4,200,1,2,3];
+    Solution::longest_consecutive(nums);
 }
