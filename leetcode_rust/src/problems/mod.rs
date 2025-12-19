@@ -28,3 +28,5 @@ pub mod longest_consecutive;
 pub mod max_points;
 pub mod my_pow;
 pub mod trailing_zeros;
+pub mod is_anagram;
+pub mod happy_number;

@@ -6,7 +6,6 @@ impl Solution {
     pub fn longest_consecutive(nums: Vec<i32>) -> i32 {
         let num_set: HashSet<i32> = nums.into_iter().collect();
         let mut best = 0;
-        print!("{:?}", num_set);
 
         for &num in &num_set {
             let prev = num - 1;
@@ -23,7 +22,6 @@ impl Solution {
             }
         }
 
-        println!("{}", best);
         best
     }
 }
