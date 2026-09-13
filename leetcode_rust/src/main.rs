@@ -1,7 +1,6 @@
-use leetcode_rust::problems::happy_number::Solution;
+use leetcode_rust::problems::dist_money::Solution;
 
 
 fn main() {
-    let n = 19;
-    Solution::is_happy(n);
+    println!("{:#?}", Solution::dist_money(20, 3));
 }

@@ -30,3 +30,5 @@ pub mod my_pow;
 pub mod trailing_zeros;
 pub mod is_anagram;
 pub mod happy_number;
+pub mod pascals_triangle;
+pub mod dist_money;
